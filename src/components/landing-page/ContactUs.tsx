@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import Logo from "../Logo";
 import contactVideo from "../../assets/contact_video.mp4";
 import { RiFacebookCircleFill } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";

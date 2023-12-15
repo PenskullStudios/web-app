@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 export default function Heading({ title }: { title: string }) {
   const [isVisible, setIsVisible] = useState(false);
