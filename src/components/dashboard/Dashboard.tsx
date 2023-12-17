@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import NavBar from "./NavBar";
 import { useAuth } from "@clerk/clerk-react";
+import NavBar from "./NavBar";
+import Histogram from "./Histogram";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -21,7 +22,12 @@ const Dashboard = () => {
   return (
     <div>
       <NavBar />
-      <div className="text-center mt-10">Dashboard</div>
+      <div className="w-full flex flex-col justify-center items-center gap-10 mt-10">
+        <div className="text-center">Dashboard</div>
+        <div className="h-96 w-96">
+          <Histogram />
+        </div>
+      </div>
     </div>
   );
 };
