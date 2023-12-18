@@ -11,6 +11,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import Loading from "./Loading";
 
 const TooltipStyle = {
   background: "rgba(255, 255, 255, 0.4)",
@@ -23,11 +24,13 @@ const TooltipStyle = {
 
 export default function Histogram() {
   const [data, setData] = useState<emply[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
   const { getToken } = useAuth();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        setLoading(true);
         const token = await getToken();
         const req = await axios.get(
           `${import.meta.env.VITE_API_URL}/employee-workinghours`,
@@ -39,7 +42,8 @@ export default function Histogram() {
           }
         );
         const data: emply[] = req.data;
-        return setData(data);
+        setData(data);
+        setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -48,13 +52,21 @@ export default function Histogram() {
   }, [getToken]);
 
   return (
-    <ResponsiveContainer width="100%" height="100%">
-      <BarChart width={730} height={250} data={data}>
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip contentStyle={TooltipStyle} cursor={{ fill: "#f2f2f2" }} />
-        <Bar name="Working Hours" dataKey="workingHours" fill="#8884d8" />
-      </BarChart>
-    </ResponsiveContainer>
+    <>
+      {loading ? (
+        <div className="flex justify-center items-center">
+          <Loading />
+        </div>
+      ) : (
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart width={730} height={250} data={data}>
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip contentStyle={TooltipStyle} cursor={{ fill: "#f2f2f2" }} />
+            <Bar name="Working Hours" dataKey="workingHours" fill="#8884d8" />
+          </BarChart>
+        </ResponsiveContainer>
+      )}
+    </>
   );
 }

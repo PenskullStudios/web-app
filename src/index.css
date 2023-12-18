@@ -38,3 +38,136 @@
 .BackgroundVideo--fill {
   object-fit: fill;
 }
+
+/*LOADER*/
+
+.loader {
+  height: 150px;
+  width: 200px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #a0a0a0;
+  position: relative;
+}
+
+/* COMMON ANIMATIONS */
+@keyframes spinBasic {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinBasicReverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateWithBoost {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  90%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader13dot1 {
+  0%,
+  45% {
+    cx: 6;
+    cy: 6;
+  }
+  55%,
+  80% {
+    cx: 2;
+    cy: 2;
+  }
+  90%,
+  100% {
+    cx: 6;
+    cy: 6;
+  }
+}
+@keyframes loader13dot2 {
+  0%,
+  45% {
+    cx: 6;
+    cy: 24;
+  }
+  55%,
+  80% {
+    cx: 2;
+    cy: 28;
+  }
+  90%,
+  100% {
+    cx: 6;
+    cy: 24;
+  }
+}
+
+@keyframes loader13dot3 {
+  0%,
+  45% {
+    cx: 24;
+    cy: 6;
+  }
+  55%,
+  80% {
+    cx: 28;
+    cy: 2;
+  }
+  90%,
+  100% {
+    cx: 24;
+    cy: 6;
+  }
+}
+
+@keyframes loader13dot4 {
+  0%,
+  45% {
+    cx: 24;
+    cy: 24;
+  }
+  55%,
+  80% {
+    cx: 28;
+    cy: 28;
+  }
+  90%,
+  100% {
+    cx: 24;
+    cy: 24;
+  }
+}
+
+.loader13 svg {
+  overflow: visible;
+  animation: 1.5s rotateWithBoost linear infinite;
+}
+
+.loader13 svg circle:first-of-type {
+  animation: 1.5s loader13dot1 linear infinite;
+}
+.loader13 svg circle:nth-of-type(2) {
+  animation: 1.5s loader13dot2 linear infinite;
+}
+.loader13 svg circle:nth-of-type(3) {
+  animation: 1.5s loader13dot3 linear infinite;
+}
+.loader13 svg circle:last-of-type {
+  animation: 1.5s loader13dot4 linear infinite;
+}
