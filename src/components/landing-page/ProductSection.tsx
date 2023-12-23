@@ -1,9 +1,9 @@
 import Product from "./Product";
 
 const products = [
-  { imgIndex: 0, info: "Internet Plans" },
-  { imgIndex: 1, info: "Accessories" },
-  { imgIndex: 2, info: "Bundles" },
+  { imgIndex: 0, info: "BRAND Building" },
+  { imgIndex: 1, info: "MARKETING & SALES" },
+  { imgIndex: 2, info: "IT SERVICES" },
 ];
 
 export default function ProductSection() {

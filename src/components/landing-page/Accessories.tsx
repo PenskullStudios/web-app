@@ -2,14 +2,22 @@ import Accessory from "./Accessory";
 import Heading from "./Heading";
 
 const acs = [
-  { imgIndex: 0, info: "Router Set", price: "$123" },
-  { imgIndex: 1, info: "Network Extender", price: "$123" },
+  {
+    imgIndex: 0,
+    info: "Cloud Services",
+    price: "Skyrocket Your Application With Cloud!",
+  },
+  {
+    imgIndex: 1,
+    info: "Maintenance Services",
+    price: "Ensure Your Digital Show Never Flops!",
+  },
 ];
 
 export default function Accessories() {
   return (
     <div className="px-5 py-16 lg:px-16">
-      <Heading title="Accessories" />
+      <Heading title="IT Services" />
       <div className="mt-16 flex w-full flex-col justify-center items-center lg:justify-between lg:flex-row gap-20">
         {acs.map((ele, i) => {
           return (

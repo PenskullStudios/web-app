@@ -5,21 +5,21 @@ import backVideo from "../../assets/back_video.mp4";
 const faqs = [
   {
     imgIndex: 0,
-    title: "How will I know which internet plan is suitable for me?",
+    title: "What is the benefit of Penskull's commission-based sales model?",
     content:
-      "Having an FAQ section is a great way to present information about your company. Using the question-and-answer format makes it more relatable for users.",
+      "Our commission-based model fosters a partnership where our dedicated sales team works tirelessly, ensuring mutual success – we succeed when your business thrives.",
   },
   {
     imgIndex: 1,
-    title: "Does Penskull Studios cover installation fees & services?",
+    title: "How does Penskull ensure my brand's success online?",
     content:
-      "Having an FAQ section is a great way to present information about your company. Using the question-and-answer format makes it more relatable for users.",
+      "Penskull strategically elevates brand presence through a holistic approach, integrating Social Media Marketing, SEO/SEM, and cutting-edge design for a lasting digital impact.",
   },
   {
     imgIndex: 2,
-    title: "Is customer service available 24/7?",
+    title: "What sets Penskull apart from other digital agencies?",
     content:
-      "Having an FAQ section is a great way to present information about your company. Using the question-and-answer format makes it more relatable for users.",
+      "Penskull stands out by seamlessly blending creativity and tech expertise, creating digital experiences that captivate and innovate.",
   },
 ];
 
@@ -28,7 +28,7 @@ export default function Faqs() {
     <div className="relative py-16 h-[72rem] lg:h-[48rem]">
       <div className="absolute top-10 mx-auto left-0 right-0 lg:top-32 lg:left-16 lg:right-16 z-10">
         <Heading title="Faqs" />
-        <div className="mt-10 lg:mt-28 flex flex-col lg:flex-row justify-center items-center gap-14">
+        <div className="mt-10 lg:mt-28 flex flex-col lg:flex-row justify-center items-center lg:items-start gap-14">
           {faqs.map((ele, i) => {
             return (
               <Faq

@@ -23,7 +23,7 @@ export default function Accessory({
         />
       </div>
       <h2 className="text-custom-pink text-3xl font-bold mt-7">{info}</h2>
-      <h4 className="text-lg mt-1 font-bold">{price}</h4>
+      <h4 className="mt-1 text-lg">{price}</h4>
     </div>
   );
 }

@@ -8,14 +8,18 @@ export default function AboutUs() {
       <div className="w-full md:w-5/6 lg:w-1/2">
         <Heading title="About Us" />
         <p className="text-xl mt-10">
-          Innovation and technology should make life simple. That&apos;s why,
-          here at Nimble Signals, we make sure innovation works for you, your
-          business, and your people.
+          At Penskull, we blend creativity and technology seamlessly. Our
+          designers breathe life into visuals, crafting logos, flyers, and
+          websites that not only capture attention but tell your brand's unique
+          story. On the tech frontier, our coding sorcerers redefine digital
+          experiences—web apps to mobile apps, we're the architects ensuring
+          your brand thrives online.
         </p>
         <p className="text-xl mt-7">
-          Our reliable internet connection services enable you to enjoy your
-          life more. Our technologies improve every day, so you can confidently
-          focus on what really matters.
+          Beyond Pixels, Real People: Penskull is a human journey, a family of
+          digital dreamers and coding enthusiasts. Every project is a canvas for
+          boundless innovation. Join us in crafting tomorrow, digitally today.
+          Penskull: Your Partners in the Digital Odyssey.
         </p>
         <div className="mt-10 flex flex-col gap-7 md:flex-row md:gap-4 justify-center lg:justify-start items-center">
           <Link to="/">
