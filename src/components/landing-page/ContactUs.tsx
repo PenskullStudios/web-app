@@ -1,7 +1,6 @@
 import Logo from "../Logo";
 import contactVideo from "../../assets/contact_video.mp4";
 import { RiFacebookCircleFill } from "react-icons/ri";
-import { FaXTwitter } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 
 export default function ContactUs() {
@@ -30,18 +29,29 @@ export default function ContactUs() {
       <div className="flex gap-10 flex-col px-5 lg:px-0">
         <div>
           <h1 className="text-custom-pink text-3xl">Phone</h1>
-          <p className="text-lg mt-1">(123) 456-7890</p>
+          <p className="text-lg mt-1">+91-7558445089</p>
         </div>
         <div>
           <h1 className="text-custom-pink text-3xl">Email</h1>
-          <p className="text-lg mt-1">hello@reallygreatsite.com</p>
+          <p className="text-lg mt-1">sales@penskullstudios.com</p>
         </div>
         <div>
           <h1 className="text-custom-pink text-3xl">Social</h1>
           <div className="flex gap-2 mt-1 items-center">
-            <RiFacebookCircleFill size={"50px"} />
-            <FaXTwitter size={"40px"} />
-            <FiInstagram size={"40px"} />
+            <a
+              href={"https://www.instagram.com/penskull.studios/"}
+              target="_blank"
+            >
+              <FiInstagram size={"40px"} />
+            </a>
+            <a
+              href={
+                "https://www.facebook.com/people/Penskull-Studios/61554998945907/"
+              }
+              target="_blank"
+            >
+              <RiFacebookCircleFill size={"50px"} />
+            </a>
           </div>
         </div>
       </div>

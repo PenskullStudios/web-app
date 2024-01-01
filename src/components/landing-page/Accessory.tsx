@@ -1,5 +1,5 @@
-import acs1 from "../../assets/acs_1.webp";
-import acs2 from "../../assets/acs_2.webp";
+import acs1 from "../../assets/IT-Cloud Services-02.png";
+import acs2 from "../../assets/IT-Maintenance-02.png";
 
 const image = [acs1, acs2];
 

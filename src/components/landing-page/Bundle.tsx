@@ -1,6 +1,6 @@
-import bundle1 from "../../assets/bundle_1.webp";
-import bundle2 from "../../assets/bundle_2.webp";
-import bundle3 from "../../assets/bundle_3.webp";
+import bundle1 from "../../assets/marketing&sales-Social Media.png";
+import bundle2 from "../../assets/marketing&sales-SEO.png";
+import bundle3 from "../../assets/marketing&sales-Commision based.png";
 
 const bundles = [bundle1, bundle2, bundle3];
 

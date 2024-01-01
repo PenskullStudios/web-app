@@ -1,11 +1,11 @@
 import HeroSection from "./HeroSection";
 import ProductSection from "./ProductSection";
-import InternetPlans from "./InternetPlans";
-import Bundles from "./Bundles";
-import Accessories from "./Accessories";
+import BrandBuilding from "./BrandBuilding";
 import Faqs from "./Faqs";
 import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
+import MarketingSales from "./Marketing&Sales";
+import ITServices from "./ITServices";
 
 export default function Home() {
   return (
@@ -13,9 +13,9 @@ export default function Home() {
       <div className="bg-gradient-to-r from-custom-purple to-custom-pink h-5"></div>
       <HeroSection />
       <ProductSection />
-      <InternetPlans />
-      <Bundles />
-      <Accessories />
+      <BrandBuilding />
+      <MarketingSales />
+      <ITServices />
       <Faqs />
       <AboutUs />
       <ContactUs />

@@ -1,7 +1,7 @@
 import Button from "./Button";
-import productImage1 from "../../assets/product_1.webp";
-import productImage2 from "../../assets/product_2.webp";
-import productImage3 from "../../assets/product_3.webp";
+import productImage1 from "../../assets/Products-Brand Building.png";
+import productImage2 from "../../assets/Products-Marketing.png";
+import productImage3 from "../../assets/Products-IT Services.png";
 
 const images = [productImage1, productImage2, productImage3];
 
@@ -22,7 +22,7 @@ export default function Product({
           className="rounded-[5rem] w-full h-full object-cover"
         />
         <p className="absolute bottom-24 text-center text-white uppercase text-4xl font-extrabold w-full px-10">
-          {info}
+          <span className="bg-[rgba(131,46,255,0.5)] px-2">{info}</span>
         </p>
         <div className="absolute bottom-7 flex justify-center w-full">
           <Button info="find out more" link="/" />

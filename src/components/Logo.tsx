@@ -1,9 +1,9 @@
-import logo from "../assets/temp_logo.svg";
+import logo from "../assets/penskull-logo.svg";
 
 export default function Logo() {
   return (
-    <div className="flex justify-start items-center gap-5">
-      <img src={logo} alt="penskull logo" width={40} height={40} />
+    <div className="flex justify-start items-center gap-2">
+      <img src={logo} alt="penskull logo" width={50} height={50} />
       <p className="uppercase text-lg tracking-wider font-semibold">
         Penskull Studios
       </p>
