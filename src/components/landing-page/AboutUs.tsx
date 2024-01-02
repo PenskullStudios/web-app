@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import image from "../../assets/about_us.webp";
 import Heading from "./Heading";
 
@@ -22,18 +21,24 @@ export default function AboutUs() {
           Penskull: Your Partners in the Digital Odyssey.
         </p>
         <div className="mt-10 flex flex-col gap-7 md:flex-row md:gap-4 justify-center lg:justify-start items-center">
-          <Link to="/">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf5jJBuLZkQT9kGZdsyEwyhjlbU0AF4Xy4BLxfBtLJWePDkZg/viewform"
+            target="_blank"
+          >
             <button className="bg-gradient-to-r from-custom-purple to-custom-pink uppercase w-52 py-4 rounded-full font-bold">
               See our products
             </button>
-          </Link>
-          <Link to="/">
+          </a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf5jJBuLZkQT9kGZdsyEwyhjlbU0AF4Xy4BLxfBtLJWePDkZg/viewform"
+            target="_blank"
+          >
             <button className="bg-gradient-to-r from-custom-purple to-custom-pink uppercase p-1 w-52 rounded-full font-bold">
               <span className="flex w-full py-3 justify-center bg-[#281549] rounded-full">
                 Get in touch
               </span>
             </button>
-          </Link>
+          </a>
         </div>
       </div>
       <div className="w-full md:w-5/6 lg:w-[45%] h-[32rem] relative">

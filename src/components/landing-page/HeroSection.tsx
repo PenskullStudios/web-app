@@ -14,10 +14,13 @@ export default function HeroSection() {
           Untangle the web with us
         </p>
         <div className="flex justify-center lg:justify-start">
-          <Button info="connect here" link="/" />
+          <Button
+            info="connect here"
+            link="https://docs.google.com/forms/d/e/1FAIpQLSf5jJBuLZkQT9kGZdsyEwyhjlbU0AF4Xy4BLxfBtLJWePDkZg/viewform"
+          />
         </div>
       </div>
-      <div className="w-full md:w-5/6 lg:w-1/2 h-[26rem] md:h-[32rem] relative lg:mt-14">
+      <div className="w-full md:w-5/6 lg:w-1/2 h-[20rem] md:h-[32rem] relative lg:mt-14">
         <img
           src={hero}
           alt="Hero image"

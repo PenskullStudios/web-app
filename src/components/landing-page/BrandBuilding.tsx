@@ -46,7 +46,10 @@ export default function BrandBuilding() {
           );
         })}
         <div className="mt-4 md:mt-10">
-          <Button info="compare plans" link="/" />
+          <Button
+            info="compare plans"
+            link="https://docs.google.com/forms/d/e/1FAIpQLSf5jJBuLZkQT9kGZdsyEwyhjlbU0AF4Xy4BLxfBtLJWePDkZg/viewform"
+          />
         </div>
       </div>
     </div>

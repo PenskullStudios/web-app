@@ -21,11 +21,14 @@ export default function Product({
           loading="lazy"
           className="rounded-[5rem] w-full h-full object-cover"
         />
-        <p className="absolute bottom-24 text-center text-white uppercase text-4xl font-extrabold w-full px-10">
+        <p className="absolute bottom-24 text-center text-white uppercase text-4xl font-extrabold w-full">
           <span className="bg-[rgba(131,46,255,0.5)] px-2">{info}</span>
         </p>
         <div className="absolute bottom-7 flex justify-center w-full">
-          <Button info="find out more" link="/" />
+          <Button
+            info="find out more"
+            link="https://docs.google.com/forms/d/e/1FAIpQLSf5jJBuLZkQT9kGZdsyEwyhjlbU0AF4Xy4BLxfBtLJWePDkZg/viewform"
+          />
         </div>
       </div>
     </div>

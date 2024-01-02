@@ -16,12 +16,12 @@ export default function ContactUs() {
         >
           <source src={contactVideo} type="video/mp4" />
         </video>
-        <div className="absolute top-0 left-0 p-5 md:p-16 md:py-10">
+        <div className="absolute left-0 top-0 p-2 md:p-16 md:py-10">
           <Logo />
-          <h1 className="uppercase text-3xl md:text-5xl xl:text-7xl white-neon mt-5 md:mt-10 w-full md:w-3/5">
+          <h1 className="uppercase text-3xl md:text-5xl xl:text-7xl white-neon mt-2 md:mt-10 w-full md:w-3/5">
             connect to what counts
           </h1>
-          <h2 className="uppercase text-lg lg:text-2xl mt-5">
+          <h2 className="uppercase text-lg lg:text-2xl mt-2 md:mt-5">
             Let&apos;s get started
           </h2>
         </div>

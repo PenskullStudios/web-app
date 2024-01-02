@@ -25,8 +25,8 @@ const faqs = [
 
 export default function Faqs() {
   return (
-    <div className="relative py-16 h-[72rem] lg:h-[48rem]">
-      <div className="absolute top-10 mx-auto left-0 right-0 lg:top-32 lg:left-16 lg:right-16 z-10">
+    <div className="relative flex items-center h-[72rem] lg:h-[48rem]">
+      <div className="absolute z-10 lg:px-16">
         <Heading title="Faqs" />
         <div className="mt-10 lg:mt-28 flex flex-col lg:flex-row justify-center items-center lg:items-start gap-14">
           {faqs.map((ele, i) => {
